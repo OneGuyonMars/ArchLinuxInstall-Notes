@@ -68,5 +68,19 @@ btrfs subvolume create @active
 btrfs subvolume create @active/root
 btrfs subvolume create @active/home
 btrfs subvolume create @snapshots
+cd ..
 ```
-
+> Optional
+> ```
+> cd /mnt
+> btrfs subvolume create @misc
+> btrfs subvolume create @misc/log
+> btrfs subvolume create @misc/cache
+> cd ..
+> ```
+Unmount /mnt
+```umount /mnt```
+Mounting root and creating required directories
+```
+mount -o subvol=_active/rootvol /dev/sda3 /mnt
+```
