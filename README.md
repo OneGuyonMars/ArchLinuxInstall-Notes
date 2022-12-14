@@ -30,15 +30,19 @@
 
 ### BTRFS Layout
 ```
-			╔════════════════════════════════════╗
-sda3			║Partition formatted as BTRFS        ║
-|			╠════════════════════════════════════║
-├@active		║Subvolume                           ║
-|├-root			║Subvolume mounted at /              ║
-|└-home			║Subvolume mounted at /home          ║
-|			╠════════════════════════════════════║
-└@snapshots		║Stores Snapshots as subvolumes      ║
-			╚════════════════════════════════════╝
+			╔══════════════════════════════════════════╗
+sda3			║Partition formatted as BTRFS              ║
+|			╠══════════════════════════════════════════║
+├@active		║Subvolume                                 ║
+|├-root			║Subvolume mounted at /                    ║
+|└-home			║Subvolume mounted at /home                ║
+|			╠══════════════════════════════════════════║
+├@snapshots		║Stores Snapshots as subvolumes            ║
+|			╠══════════════════════════════════════════║
+└@misc			║Subvolume                                 ║
+ ├-cache		║Subvolume mounted at /var/cache/pacman/pkg║
+ └-log			║Subvolume mounted at /var/log             ║
+			╚══════════════════════════════════════════╝
 ```
 ##	Installation
 Refresh the repository and update archlinux-keyring in case of an old ISO
