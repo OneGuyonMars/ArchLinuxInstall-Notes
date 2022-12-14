@@ -206,17 +206,15 @@ mkinitcpio -p linux
 
 ### Setting up users and passwords
 
-```
-passwd
-```
-
 Create a new user by
 ```
 useradd -mG wheel username
 ```
 
-Create a password for it by 
+Create a password for host and users by
+
 ```
+passwd
 passwd username
 ```
 Edit sudo file by
@@ -236,3 +234,5 @@ Uncomment the line containing
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
+
+## REBOOT
