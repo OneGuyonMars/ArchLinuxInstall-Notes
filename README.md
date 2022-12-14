@@ -295,6 +295,11 @@ GRUB_DISABLE_OS_PROBER=false <-- Uncomment this
 GRUB_TIMEOUT_STYLE=hidden
 ```
 
+### Power-profiles-daemon
+```
+sudo pacman -S power-profiles-daemon
+sudo systemctl enable --now  power-profiles-daemon
+```
 # References
 [Egara](https://github.com/egara/arch-btrfs-installation)
 [Mikeroyal](https://github.com/mikeroyal/PipeWire-Guide#Installing-PipeWire-on-Arch-Linux)
