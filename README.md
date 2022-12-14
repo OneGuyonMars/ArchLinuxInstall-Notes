@@ -273,3 +273,20 @@ LIBVA_DRIVER_NAME=i965
 VDPAU_DRIVER=va_gl
 ...
 ```
+
+### Thermald
+```
+sudo pacman -S thermald
+sudo systemctl enable --now thermald
+```
+
+### Pipewire
+```
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber pulsemixer
+systemctl --user enable --now pipewire.socket wireplumber pipewire-pulse.socket
+```
+
+# References
+[Egara](https://github.com/egara/arch-btrfs-installation)
+[Mikeroyal](https://github.com/mikeroyal/PipeWire-Guide#Installing-PipeWire-on-Arch-Linux)
+[LarryisBetter](https://gist.github.com/LarryIsBetter/218fda4358565c431ba0e831665af3d1)
