@@ -264,7 +264,7 @@ NameResolvingService=systemd
 
 ### Swaywm
 ```
-sudo pacman -S sway swaylock swayidle swaybg 
+sudo pacman -S sway swaylock swayidle swaybg imv mpv foot 
 ```
 
 ### Intel
