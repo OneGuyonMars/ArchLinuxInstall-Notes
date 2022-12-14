@@ -286,6 +286,15 @@ sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber p
 systemctl --user enable --now pipewire.socket wireplumber pipewire-pulse.socket
 ```
 
+### GRUB
+/etc/default/grub
+```
+GRUB_TIMEOUT=0
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 udev.log_level=3"
+GRUB_DISABLE_OS_PROBER=false <-- Uncomment this
+GRUB_TIMEOUT_STYLE=hidden
+```
+
 # References
 [Egara](https://github.com/egara/arch-btrfs-installation)
 [Mikeroyal](https://github.com/mikeroyal/PipeWire-Guide#Installing-PipeWire-on-Arch-Linux)
