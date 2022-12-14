@@ -246,3 +246,18 @@ exit
 umount -R /mnt
 reboot
 ```
+
+## Post Installation
+
+### Iwd
+
+Edit /etc/iwd/main.conf as
+
+```
+[General]
+EnableNetworkConfiguration=true
+
+[Network]
+NameResolvingService=systemd
+```
+
