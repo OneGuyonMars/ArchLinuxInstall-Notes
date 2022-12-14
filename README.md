@@ -295,6 +295,14 @@ GRUB_DISABLE_OS_PROBER=false <-- Uncomment this
 GRUB_TIMEOUT_STYLE=hidden
 ```
 
+### Cpupower
+
+```
+sudo pacman -S cpupower
+sudo systemctl enable cpupower
+cpupower frequency-set -g powersave
+```
+
 ### Power-profiles-daemon
 ```
 sudo pacman -S power-profiles-daemon
