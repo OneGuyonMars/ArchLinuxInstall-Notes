@@ -321,8 +321,10 @@ GRUB_TIMEOUT_STYLE=hidden
 ```
 sudo pacman -S cpupower
 sudo systemctl enable cpupower
-cpupower frequency-set -g powersave
-cpupower set -b 8
+```
+edit **/etc/default/cpupower**
+```
+governor='powersave'
 ```
 
 ### Power-profiles-daemon
