@@ -264,5 +264,12 @@ NameResolvingService=systemd
 
 ### Intel
 ```
-sudo pacman -S --needed mesa vulkan-intel
+sudo pacman -S --needed mesa vulkan-intel libva-intel-driver libvdpau-va-gl libva-utils vdpauinfo intel-media-sdk
+```
+Edit /etc/environment
+```
+...
+LIBVA_DRIVER_NAME=i965
+VDPAU_DRIVER=va_gl
+...
 ```
