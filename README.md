@@ -260,4 +260,9 @@ EnableNetworkConfiguration=true
 [Network]
 NameResolvingService=systemd
 ```
+## Personal Configurations
 
+### Intel
+```
+sudo pacman -S --needed mesa vulkan-intel
+```
