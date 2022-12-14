@@ -185,7 +185,7 @@ pacman -S linux-headers btrfs-progs grub efibootmgr base-devel broadcom-wl-dkms
 Optional
 
 ```
-pacman -S fish iwd ufw polkit firefox terminus-font wget vifm fzy git wl-clipboard
+pacman -S fish iwd ufw polkit firefox terminus-font wget vifm fzy git wl-clipboard btop
 ```
 
 > Install wl-clipboard only if your planning to use [wayland](https://wiki.archlinux.org/title/wayland)
@@ -261,6 +261,11 @@ EnableNetworkConfiguration=true
 NameResolvingService=systemd
 ```
 ## Personal Configurations
+
+### Swaywm
+```
+sudo pacman -S sway swaylock swayidle swaybg 
+```
 
 ### Intel
 ```
